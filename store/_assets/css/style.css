@@ -1,0 +1,136 @@
+#order-form {z-index:10;width:100%;margin-top:20px}
+
+.basket {position:absolute; margin-left: 12px; margin-top: 5px; z-index:99; border:solid 1px;width:224px;padding:5px;text-align:center;background:#fff;
+         -webkit-box-shadow: 1px 3px 5px rgba(50, 50, 50, 0.75);
+         -moz-box-shadow:    1px 3px 5px rgba(50, 50, 50, 0.75);
+         box-shadow:         1px 3px 5px rgba(50, 50, 50, 0.75);overflow: hidden;}
+.basket.fixed {position: fixed; top: 30px; margin-top: 0px; }
+.basket h3 {font-weight: bold; letter-spacing: -1px; font-style: normal;}
+.basket .btn{margin-top:10px}
+.basket .basket-msg {/*max-height:300px;overflow: auto;*/text-align:left; position: relative; margin-left: -5px; margin-right: -5px;}
+.basket .basket-msg>h4 {display: block; margin: 0px 0px 10px 0px; padding: 0px; width: 260px; height: 32px; background-repeat: no-repeat; background-position: 0px 0px; font-size: 0; line-height: 0; text-indent: -9999px;}
+.basket .basket-msg>h4.products {background-image: url(../images/basket-header-products.jpg);}
+.basket .basket-msg>h4.add-on {background-image: url(../images/basket-header-addon.jpg);}
+.basket .basket-msg>h4.cooler {background-image: url(../images/basket-header-dryice.jpg);}
+.basket .basket-msg>h4.no-items {background-image: url(../images/basket-header-noitems.jpg);}
+.basket .basket-msg>p { margin: 0px 10px 10px 10px; padding: 0px; font-size: 12px; line-height: 15px; font-family: sans-serif; }
+.basket .basket-msg>p.notice { display: block; border: 1px #553d2a dashed; background-color: #eee; padding: 5px; margin: 0px 10px 20px 10px; font-weight: bold; font-style: italic; font-size: 11px; line-height: 13px; }
+.basket .basket-msg>p.notice.empty { text-align: center; margin-bottom: 5px; }
+.basket .basket-msg>table { border: 1px #553d2a solid; border-collapse: collapse; padding: 0px; margin: 0px 10px 20px 10px; }
+.basket .basket-msg>table thead th { padding: 4px 2px 4px 2px; color: #fff; text-shadow: 0px 1px 0px #000; font-family: sans-serif; font-size: 11px; line-height: 11px; font-weight: bold; text-align: left; text-transform: uppercase; vertical-align: top; }
+.basket .basket-msg>table tbody td { padding:4px 2px 0; color: #000; font-family: sans-serif; font-size: 11px; line-height: 11px; text-align: left; vertical-align: top; }
+
+.basket .basket-msg>table.products thead th { background-color: #89bab4; }
+.basket .basket-msg>table.add-on thead th { background-color: #80a231; }
+.basket .basket-msg>table.cooler thead th { background-color: #1b94cd; }
+
+.basket .basket-msg>table tbody td.title>strong { display: block; font-weight: bold; }
+.basket .basket-msg>table tbody td.title>span { display: block; padding-top: 3px; font-size: 10px; line-height: 10px; color: #999; font-style: italic; }
+
+.basket .basket-msg>table tbody td.title2>span { display: block; padding-top: 0px; font-size: 10px; line-height: 10px; color: #999; font-style: italic; }
+
+
+.basket .basket-msg>table tbody td.actions>a { display: block; position: relative; top: -3px; width: 16px; height: 16px;
+                                               background-image: url(../images/delete.png); background-repeat: no-repeat; background-position: 0px 0px; cursor: pointer; 
+                                               text-indent: -9999px; font-size: 0; line-height: 0;margin-left: 6px }
+
+.basket .basket-msg>table thead th.title, .basket .basket-msg>table tbody td.title { width: 60%; }
+.basket .basket-msg>table thead th.qty, .basket .basket-msg>table tbody td.qty { width: 10%; text-align: center; }
+.basket .basket-msg>table thead th.price, .basket .basket-msg>table tbody td.price { width: 20%; text-align: center; }
+.basket .basket-msg>table thead th.actions, .basket .basket-msg>table tbody td.actions { width: 24px; }
+.basket .basket-msg>table thead th.shipping-weight, .basket .basket-msg>table tbody td.shipping-weight { width: 100px; }
+.basket .basket-msg>table thead th.shipping-qty, .basket .basket-msg>table tbody td.shipping-qty { width: 100px; text-align: center; }
+.basket .basket-msg>table thead th.shipping-cost, .basket .basket-msg>table tbody td.shipping-cost { width: 100px; text-align: center; }
+.basket .basket-msg .add-on td {padding-bottom: 4px}
+
+/* developer info stuff */
+.basket .dev-info {display: block; height: 19px; margin-top: 20px; background-color: #666; text-transform: uppercase; color: #fff; font-size: 12px; line-height: 19px; letter-spacing: 1px; text-align: center; cursor: pointer; }
+.basket .dev-info.open { background-color: transparent; height: auto; color: #666; }
+.basket .dev-info>span { font-family: monospace; font-size: 12px; line-height: 12px; text-transform: none; letter-spacing: none; color: #000; font-weight: bold; }
+
+.success2 {background:url(/img/add-to-cart.png); 
+           border: medium none;
+           cursor: pointer;
+           height: 28px;
+           text-indent: -999px;
+           width: 135px;display:block;}
+#order-form .product {
+    border: 2px solid #CCCCCC;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 2%;
+    min-height: 127px;
+    padding: 10px;
+    width: 48%;
+}
+#order-form .product .p-info {
+    position: relative;
+}
+#order-form .product h2 {
+    position: absolute;
+    top: -3px;
+    display: block;
+    float: right;
+    margin-top: 0;
+    width: 100%;
+    height: 24px;
+    color: #600000;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 15px;
+}
+.basket a {text-decoration: underline}
+.basket a.btn {text-decoration:none}
+.basket .cart-min{display: none; cursor:pointer;position:absolute;margin-left:20px;font-size: 10px;font-family: tahoma;}
+#order-form .product select {
+    font-size: 12px;
+    height: 22px;
+    padding: 2px;
+    width: 212px;
+    margin-top: 35px;
+    margin-bottom:9px;
+}
+#order-form .product .certBuilder {
+    margin-top: 44px;
+}
+#order-form .product img{max-height:106px;overflow: hidden;}
+.basket-total {position: relative; margin-left: -5px; margin-right: -5px; margin-bottom: 7px; padding-top: 3px; padding-bottom: 4px; border-top: 1px #553d2a solid; border-bottom: 1px #553d2a solid; font-size: 16px; line-height: 16px; text-transform: uppercase; text-align: center; font-weight: bold; }
+.basket .highlighted {background:#E8A2AA}
+#col-left .section {opacity: 0}
+#content {
+    float: left;
+    margin-left: 10px;
+    overflow: hidden;
+    width: 705px;
+}
+#col-left {
+    float: left;
+    width: 250px;
+}
+.redeem {
+    border: 2px solid #CCCCCC;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 2%;
+    min-height: 30px;
+    padding: 10px;
+    width: 94%;
+}
+#redeem-form {margin-bottom: 0px}
+body #redeem-form .r-code{margin-bottom: 0px}
+
+.modal {
+    position: fixed;
+    top: 10%;
+    left: 47%;
+    height:80%;
+    z-index: 1050;
+    width: 655px;}
+.modal-body {
+    position: relative;
+    overflow-y: auto;
+    max-height: 80%;
+
+}
